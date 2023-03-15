@@ -1,3 +1,7 @@
+// npx hardhat run scripts/run.tsの時の流れ
+// ローカル環境でイーサリアムネットワークを新規に作成する。
+// ローカル環境でコントラクトをデプロイする。
+// プログラムが終了すると、Hardhatは自動的にそのイーサリアムネットワークを削除する。
 import { ethers } from "hardhat";
 
 const main = async () => {
