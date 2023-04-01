@@ -16,3 +16,10 @@ npx hardhat run scripts/deploy.ts --network localhost
 ## 参考
 
 <https://app.unchain.tech/learn/ETH-dApp/ja/0/1/>
+
+## ローカルブロックチェーンにデプロイするときの手順
+
+1. ローカルでブロックチェーンネットワーク起動`npx hardhat node`
+1. デプロイ`npx hardhat run scripts/deploy.ts --network localhost`
+1. MetaMaskのlocalhostのchainIDをコンソールのログに記載の適切なものに変更する
+1. イーサがないので、送りたいアドレスを設定の上、実行`npx hardhat run scripts/send_eth.ts --network localhost`
